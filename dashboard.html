@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Equipment Maintenance</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <h2>Equipment Predictive Maintenance Dashboard</h2>
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="equipment.html">Equipment Details</a>
+    <a href="history.html">History</a>
+    <a href="alerts.html">Alerts</a>
+  </nav>
+
+  <main id="dashboard">
+    <div class="card">
+      <h3>Total Machines</h3>
+      <p id="machineCount">Loading...</p>
+    </div>
+    <div class="card">
+      <h3>Active Alerts</h3>
+      <p id="activeAlerts">Loading...</p>
+    </div>
+    <div class="card">
+      <h3>Predicted Faults</h3>
+      <p id="predictedFaults">Loading...</p>
+    </div>
+  </main>
+
+  <section id="sensorData">
+    <h3>Live Sensor Data</h3>
+    <canvas id="chart"></canvas>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
